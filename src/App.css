@@ -1,0 +1,115 @@
+#root {
+  max-width: 900px;
+  text-align: center;
+}
+
+.app {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.task-input-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+input {
+  width: 280px;
+  max-width: 90vw;
+  padding: 0.65rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: inherit;
+}
+
+.task-list ol {
+  display: grid;
+  list-style: none;
+  width: min(560px, 95vw);
+  padding-left: 0;
+  gap: 1rem;
+  text-align: left;
+}
+
+.task-item {
+  display: grid;
+  grid-template-columns: 22px 1fr auto auto;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.task-item input {
+  width: 18px;
+  height: 18px;
+}
+
+.clear-btn {
+  margin-top: 1rem;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.edit-modal {
+  width: min(420px, 95vw);
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #1f1f1f;
+  text-align: center;
+}
+
+.edit-modal input {
+  width: auto ;
+}
+
+.edit-modal h2 {
+  margin: 0 0 10px;
+}
+
+.filter-modal {
+  width: min(420px, 95vw);
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #1f1f1f;
+}
+
+.filter-modal input {
+  width: auto;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column; /* Stacks elements vertically */
+  justify-content: center; /* Centers elements vertically */
+  align-items: center;
+}
+
+.filter-options label {
+  margin-bottom: 1rem;
+}
+
+.filter-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
